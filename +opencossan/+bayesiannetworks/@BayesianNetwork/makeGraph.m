@@ -35,7 +35,6 @@ if length(BN.NodesNames)==1
     set(graphObj.nodes,'Shape','rectangle','Color',[0.5, 0.69, 0.5],'LineColor',[0.5, 0.69, 0.5],'FontSize',20);
 elseif length(BN.NodesNames)>1
     graphObj = biograph(BN.DAG,cellstr(BN.NodesNames),'EdgeType','curved');%,'ArrowSize',90);
-    %graphObj = digraph(BN.DAG,cellstr(BN.NodesNames),'EdgeType','curved');%,'ArrowSize',90);
     set(graphObj,'LayoutScale',1);
     set(graphObj,'NodeAutoSize','on');
     set(graphObj.nodes,'Shape','rectangle','Color',[0.5, 0.69, 0.5],'LineColor',[0.5, 0.69, 0.5]);
